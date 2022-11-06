@@ -1,0 +1,79 @@
+body{
+    margin: 0;
+}
+.main{
+    position:absolute;
+    background-color:#f4d7d7;
+    height:900px;
+    width: 1600px;
+    padding:0px;
+}
+.header-search-button{
+    background-color:#ffffff;
+    height:66px;
+    width:66px;
+    border-radius:20px;
+    left:944px;
+    top:88px;
+    position:absolute;
+}
+.header-write{
+    background-color:#ffffff;
+    height:66px;
+    width:93px;
+    border-radius:30px;
+    border:1px solid #cdcccc;
+    top:87px;
+    left:1028px;
+    position:absolute;
+}
+.List{
+    background-color:#ffffff;
+    height:668px;
+    width:1018px;
+    border-radius:30px;
+    border:1px solid #cdcccc;
+    top:223px;
+    left:217px;
+    position:absolute;
+}
+.List-name{
+    color:#000000;
+    text-align:center;
+    vertical-align:text-top;
+    font: size 20px;
+    font-family:Inter;
+    left:227px;
+    top:243px;
+    width:168px;
+    height:62px;
+    position:absolute;
+    line-height:auto;
+}
+.search-engine{
+    background-color:#ffffff;
+    height:66px;
+    width:628px;
+    border-radius:40px;
+    border:1px solid #cdcbcb;
+    top:87px;
+    left:311px;
+    position:absolute;
+}
+.header-login{
+    background-color:#ffffff;
+    height:66px;
+    width:96px;
+    border-radius:30px;
+    border:1px solid #cdcccc;
+    top:87px;
+    left:1139px;
+    position:absolute;
+}
+.header-image{
+    height:66px;
+    width:89.25px;
+    left:217px;
+    top:87px;
+    position:absolute;
+}
