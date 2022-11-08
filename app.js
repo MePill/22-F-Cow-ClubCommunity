@@ -1,5 +1,5 @@
+import bodyParser_post from 'body-parser';
 import express from 'express';
-import path from 'path';
 import path from 'path';
 import fs from 'fs';
 
@@ -48,6 +48,36 @@ app.post('/create',(req,res,)=>{
     });
 });
 
+app.get('/main/:id/update',(req,res)=>{
+    
+    const id = req.body.id;
+    const fileName= 'filesystem/'+ id;
+    
+    fs.readFile(fileName, 'utf-8', (req,res)=>{
+        if(err){
+            console.log('err');
+            res.status(500).send('Internal Server Error');
+        }else{
+            res.render('update.ejs', {title: id, description: data});
+
+        }
+    });
+});
+
+app.get('/main/:id',(req,res)=>{
+    const id = req.params.id;
+    const fileName = 'filesystem/'+id;
+
+    fs.readFile(fileName,'utf-8',(err,data)=>{
+        if(err){
+            console.log(err);
+            res.status(500).send('Internal Server Error');
+        }else{
+            res.render('view.ejs',{title: id, description: data});
+
+        }
+    });
+});
 
 app.get('/log-in',(req,res)=>{
     res.sendFile(__dirname+'/views/login.html');
