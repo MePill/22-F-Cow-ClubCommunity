@@ -12,10 +12,12 @@
         <button type='submit' class='header-search-btn' id='header-search-btn' onClick=''><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAArCAYAAADhXXHAAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAG2SURBVHgB7ZiPcYIwFMa/ukDZQDpB2YB2AtyAbuAIjOAIdIN2A+wE2gloJ9BOYPOuUF9ClD95Ubzjd/fdRRDy5SV5SQAmJm6LO7gxVwrZ70+lPUZEolQo7ZQOFpVKOf4acjXiysihh65ieoXThijC5xpB9xJciNxigIbBQikw/hsppbCbT+EZM6Jk4qnjsxmaPfAIT6RGZRs0I9kGmeMTsRzwjk6UQpUk0BudQRgzqnO4wYcTRVo0ugX09ONKAL3xMQThL5ZKOzwAKwgRQTcr1WVL6JO1NzPLtXtW3kNurf9h5UEBmLXcl9yUlHCkzazkrH1g5UFBsJn9ZmUy65q2avjqJWb2q1LNC2RYsPIagvAk7jzW0FzFIggSGy9fwg2+dBfwwBtkVh1z5+ZlbxtC3zHtelZEk9M0msMj5nDoelSh50rLs0O2mf90Od2mSq+W62uldxwzB5mgiUOzPsRptkrP8HgKDtH/sMg3LRsIRrgrWQ/TBY5HoEDC8NCPHNTVNC6p20N2fVvpA83ET8YK6DnW+5BwQSTCl2Qy7JvJsG9u3jDl8jlGTG149EZrAoy4+ycm+vILokfteRxcLwYAAAAASUVORK5CYII="></button>
         <button type='submit'  class='header-write-btn' id='header-write-btn' value='page move' onClick='moveCreatePage()'><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGcSURBVHgBxZeBUcMgFIb/eh3ADcwG7QbNBu0G0Qk6QtygI1QniE6QOIE6QeIEZgN9GLwCRwiQR/rf/XdQHsdX4OV4wLLakGvyt/SZfIcraCMBfgy3SwONgTiBduSTHHS5RDyIaOfkowFUq5NODnKbfbbWBrJRxgtjLAqkxbSmQIS03VlJuicloCE/kzuM64Pcww3SkG9lX8Tm5E8lxlz3r11j5Nwi5bMj6vFoF1idmOOKIED4pRzTfi4IF4y5SBQIB4wPSOkDMheGFWQODDtILEwSkBiYZCChMElBQmBsqckK4gtTeCwyG8QHZjEQHxhukIxcYXj/BsHsoV9Wjh2plPgiBOasjFUMIEJ1LEw7MjEWxAmzdkzaYjjff4m22KkDLi84oQ7DO+gLM+WC2Rn9R0tMxwUidOMYO8CthhNEaB0Q25FfyG8SpAezXDAPGEqJjvwKd7XAJjVjSqRVBj0LczPATNMj0iiD/sdbM0AUcSJN36GncQ/+O5EZ/XsMxaI1UKVO7cnrkEH//KdwDUehuLL8Jo5tC351mMjIXw9EflBY8j7KAAAAAElFTkSuQmCC"></button>
         <div class='List' id='List'>
-            <%  for(const file of files) {%>)
+            <%  for(const file of files) {%>
                 <li>
-                    <%=file%>
-                </li>
+                    <a href="/main/file" >
+                        <%=file%>
+                    </a>
+                </li>        
             <% }; %>
         </div>
         <input type='text' class='search-engine' id='search-engine' placeholder=''/>
