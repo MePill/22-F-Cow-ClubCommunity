@@ -4,20 +4,23 @@ body{
 .main{
     position:absolute;
     background-color:#f4d7d7;
-    height:900px;
-    width: 1600px;
+    height: 1000px;
+    width: 100%;
     padding:0px;
+    background-size: cover;
 }
-.header-search-button{
+.header-search-btn{
     background-color:#ffffff;
     height:66px;
     width:66px;
     border-radius:20px;
     left:944px;
     top:88px;
+    border:1px solid #cdcccc;
     position:absolute;
+    z-index: 1;
 }
-.header-write{
+.header-write-btn{
     background-color:#ffffff;
     height:66px;
     width:93px;
@@ -26,6 +29,7 @@ body{
     top:87px;
     left:1028px;
     position:absolute;
+    z-index: 1;
 }
 .List{
     background-color:#ffffff;
@@ -60,7 +64,7 @@ body{
     left:311px;
     position:absolute;
 }
-.header-login{
+.header-login-btn{
     background-color:#ffffff;
     height:66px;
     width:96px;
@@ -69,11 +73,15 @@ body{
     top:87px;
     left:1139px;
     position:absolute;
+    z-index: 1;
 }
-.header-image{
+.header-image-btn{
+    background-color: #f4d7d7;
+    border:none;
     height:66px;
     width:89.25px;
     left:217px;
     top:87px;
     position:absolute;
+    z-index: 1;
 }
