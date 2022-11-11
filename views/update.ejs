@@ -19,7 +19,7 @@
             <input class='contents-box' type='text'  name = 'description' value="<%=description%>"/>
             <button type='submit' class='save-btn' onClick="console.log('수정')"> UPDATE</button>
         </form>
-            <button type='submit' class='back-to-list-btn' onClick="moveMainPage">LIST</button>
+        <a href="/main"><button type='submit' class='back-to-list-btn' name="list" onClick="moveMainPage()">LIST</button></a>
     </div>
     <script type='text/javascript'> 
         function moveCreatePage(){
