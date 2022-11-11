@@ -17,9 +17,9 @@
         <form method="post">
             <input class='title-box' type='text' name = 'name' placeholder='제목'  />
             <input class='contents-box' type='text'  name = 'contents' placeholder='내용'  />
-            <button type='submit' alue='전송' class='save-btn' onClick="console.log('저장')"> SAVE</button>
-            <button type='submit' class='back-to-list-btn' onClick="console.log('목록으로')">LIST</button>
+            <button type='submit' class='save-btn' onClick="console.log('저장')"> SAVE</button>
         </form>
+        <a href="/main"><button type='submit' class='back-to-list-btn' name="list" onClick="moveMainPage()">LIST</button></a>
     </div>
     <script type='text/javascript'> 
         function moveCreatePage(){
