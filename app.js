@@ -37,11 +37,13 @@ app.post('/create', (req, res,) => {
     const name = req.body.name;
     const contents = req.body.contents;
 
-    if (name == "") {
-        res.send(`<script>
-        alert('제목을 꼭 입력해주세요!');
-        location.href="/create";
-        </script>`);
+    if (contents == "" || name == "") {
+        res.send(
+          `<script>
+              alert('내용이나 제목을 꼭 입력해 주세요. 내용이 저장되지 않습니다.');
+              location.href='/create';
+            </script>`
+        );    
     } else {
         fs.writeFile(__dirname + `/filesystem/${name}`, contents, 'utf8', (err) => {
             if (err) {
@@ -71,28 +73,38 @@ app.get('/main/:id/update', (req, res) => {
     });
 });
 
-app.post('/main/:id/update',(req,res)=>{
+app.post('/main/:id/update', (req, res) => {
     const id = req.params.id;
     const title = req.body.title;
     const description = req.body.description;
 
-    const deletFileName = 'filesystem/'+id;
-    const fileName = __dirname+'/filesystem/'+title;
-    fs.writeFile(fileName, description, (err)=>{
-        if(err){
-            console.log(err);
-            res.status(500).send('Internal Server Error');
-        }else{
-            res.redirect('/main');
-        };
-    });
-    if(id != title){
-        fs.unlink( deletFileName,(err)=>{
-            if(err){
+    if (description == "" || title == "") {
+        res.send(
+            `<script>
+              alert('내용이나 제목을 꼭 입력해 주세요. 내용이 저장되지 않습니다.');
+              location.href='/main';
+            </script>`
+        );
+    } else {
+
+        const deletFileName = 'filesystem/' + id;
+        const fileName = __dirname + '/filesystem/' + title;
+        fs.writeFile(fileName, description, (err) => {
+            if (err) {
                 console.log(err);
+                res.status(500).send('Internal Server Error');
+            } else {
+                res.redirect('/main');
             };
         });
-    };
+        if (id != title) {
+            fs.unlink(deletFileName, (err) => {
+                if (err) {
+                    console.log(err);
+                };
+            });
+        };
+    }
 });
 
 app.get('/main/:id', (req, res) => {
