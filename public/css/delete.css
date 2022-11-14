@@ -1,0 +1,256 @@
+.desktop-6
+{
+position:absolute;
+background-color:#f4d8d8;
+height:1024px;
+width:1440px;
+padding:0px;
+}
+.rectangle3
+{
+background-color:#ffffff;
+height:66px;
+width:93px;
+border-radius:30px;
+border:1px solid #cdcccc;
+left:1028px;
+top:87px;
+position:absolute;
+}
+.rectangle6
+{
+background-color:#ffffff;
+height:66px;
+width:698px;
+border-radius:40px;
+border:1px solid #cdcbcb;
+top:87px;
+left:311px;
+position:absolute;
+}
+.header-search-btn{
+  background-color:#ffffff;
+  height:66px;
+  width:66px;
+  border-radius:20px;
+  left:944px;
+  top:88px;
+  border:1px solid #cdcccc;
+  position:absolute;
+  z-index: 1;
+}
+.header-write-btn{
+  background-color:#ffffff;
+  height:66px;
+  width:93px;
+  border-radius:30px;
+  border:1px solid #cdcccc;
+  top:87px;
+  left:1028px;
+  position:absolute;
+  z-index: 1;
+}
+
+.search-engine{
+  background-color:#ffffff;
+  height:66px;
+  width:628px;
+  border-radius:40px;
+  border:1px solid #cdcbcb;
+  top:87px;
+  left:311px;
+  position:absolute;
+}
+.header-login-btn{
+  background-color:#ffffff;
+  height:66px;
+  width:96px;
+  border-radius:30px;
+  border:1px solid #cdcccc;
+  top:87px;
+  left:1139px;
+  position:absolute;
+  z-index: 1;
+}
+.header-image-btn{
+  background-color: #f4d7d7;
+  border:none;
+  height:66px;
+  width:89.25px;
+  left:217px;
+  top:87px;
+  position:absolute;
+  z-index: 1;
+}
+.ant-design:search-outlined
+{
+background-color:#ffffff;
+height:43px;
+width:43px;
+padding:0px;
+left:952px;
+top:101px;
+position:absolute;
+}
+.vector
+{
+background-color:#000000;
+height:33.593894958496094px;
+width:33.593894958496094px;
+width:33.593894958496094px;
+height:33.593894958496094px;
+left:0px;
+top:0px;
+position:absolute;
+}
+.rectangle7
+{
+background-color:#ffffff;
+height:66px;
+width:96px;
+border-radius:30px;
+border:1px solid #cdcccc;
+top:87px;
+left:1139px;
+position:absolute;
+}
+.vector2
+{
+background-color:#000000;
+height:34.28369903564453px;
+width:35px;
+left:1057px;
+top:103px;
+position:absolute;
+}
+.group
+{
+width:42px;
+height:41.501319885253906px;
+left:1166px;
+top:99px;
+position:absolute;
+}
+.vector3
+{
+height:41.501319885253906px;
+width:42px;
+width:42px;
+height:41.501319885253906px;
+left:1166px;
+top:99px;
+width:42px;
+height:41.501319885253906px;
+position:absolute;
+}
+.vector4
+{
+height:13.83377456665039px;
+width:14px;
+width:14px;
+height:13.83377456665039px;
+left:1179.99px;
+top:105.91px;
+width:14px;
+height:13.83377456665039px;
+position:absolute;
+}
+.vector5
+{
+height:8.549962997436523px;
+width:28px;
+width:28px;
+height:8.549962997436523px;
+left:1173px;
+top:126.66px;
+width:28px;
+height:8.549962997436523px;
+position:absolute;
+}
+.image1
+{
+height:66px;
+width:89.25px;
+left:217px;
+top:87px;
+position:absolute;
+}
+.rectangle34
+{
+background-color:#ffffff;
+height:160px;
+width:1003px;
+border-radius:30px;
+top:432px;
+left:232px;
+position:absolute;
+}
+.rectangle30
+{
+background-color:#f7a6a6;
+height:52px;
+width:177px;
+border-radius:20px;
+top:514px;
+left:1031px;
+position:absolute;
+}
+.아니오
+{
+color:#ffffff;
+text-align:center;
+vertical-align:text-top;
+font-size:32px;
+font-family:Inter;
+left:1055px;
+top:520px;
+width:130px;
+height:31px;
+position:absolute;
+line-height:auto;
+}
+.rectangle31
+{
+background-color:#f7a6a6;
+height:52px;
+width:177px;
+border-radius:20px;
+top:514px;
+left:825px;
+position:absolute;
+}
+.예
+{
+color:#ffffff;
+text-align:center;
+vertical-align:text-top;
+font-size:32px;
+font-family:Inter;
+left:849px;
+top:520px;
+width:130px;
+height:31px;
+position:absolute;
+line-height:auto;
+}
+button{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: none;
+}
+.게시물을삭제하시겠습니까
+{
+color:#000000;
+text-align:center;
+vertical-align:text-top;
+font-size:32px;
+font-family:Inter;
+left:232px;
+top:453px;
+width:454px;
+height:61px;
+position:absolute;
+line-height:auto;
+}
