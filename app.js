@@ -58,9 +58,9 @@ app.post("/create", (req, res) => {
   if (contents == "" || name == "") {
     res.send(
       `<script>
-            alert('내용이나 제목을 입력하세요.다시 적어주세요.');
-            location.href='/create';
-          </script>`
+          alert('내용이나 제목을 입력하세요.다시 적어주세요.');
+          location.href='/create';
+        </script>`
     );
   } else {
     fs.writeFile(__dirname + `/filesystem/${name}`, contents, "utf8", (err) => {
@@ -139,9 +139,9 @@ app.post("/sign-up", (req, res) => {
   if (name == "" || id == "" || password == "") {
     res.send(
       `<script>
-            alert('이름이나 아이디,비밀번호을 입력하세요.다시 적어주세요.');
-            location.href='/sign-up';
-          </script>`
+          alert('이름이나 아이디,비밀번호을 입력하세요.다시 적어주세요.');
+          location.href='/sign-up';
+        </script>`
     );
   } else {
     user.save((err) => {
@@ -165,17 +165,17 @@ app.post("/sign-in", (req, res) => {
       if (err) {
         console.log(err);
         `<script>
-            alert('아이디,비밀번호을 다시 입력하세요.');
-        </script>`;
+          alert('아이디,비밀번호을 다시 입력하세요.');
+      </script>`;
       } else if (user) {
         `<script>
-            alert('로그인 성공!');
-        </script>`;
+          alert('로그인 성공!');
+      </script>`;
         res.redirect("/main");
       } else {
         `<script>
-            alert('회원가입부터 해주세요.');
-        </script>`;
+          alert('회원가입부터 해주세요.');
+      </script>`;
       }
     }
   );

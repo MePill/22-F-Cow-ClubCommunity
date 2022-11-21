@@ -1,5 +1,5 @@
 {
-  "name": "22-f-cow-clubcommunity",
+  "name": "clubcommunity",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -8,20 +8,14 @@
     "start": "nodemon app.js",
     "start-server": "node app.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Youngcircle-kim/22-F-Cow-ClubCommunity.git"
-  },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Youngcircle-kim/22-F-Cow-ClubCommunity/issues"
-  },
-  "homepage": "https://github.com/Youngcircle-kim/22-F-Cow-ClubCommunity#readme",
   "dependencies": {
     "body-parser": "^1.20.1",
     "ejs": "^3.1.8",
     "express": "^4.18.2",
+    "install": "^0.13.0",
+    "mongodb": "^4.12.0",
     "mongoose": "^6.7.2",
     "nodemon": "^2.0.20"
   },
